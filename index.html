@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Card Compnent</title>
+  </head>
+  <body
+    class="h-screen font-outfit bg-main flex items-center justify-center text-white"
+  >
+    <div
+      class="w-8/12 bg-card p-6 rounded-lg shadow-dark-blue sm:w-6/12 md:w-[354px]"
+    >
+      <div class="mb-6 relative cursor-pointer rounded-lg overflow-hidden">
+        <img
+          src="images/image-equilibrium.jpg"
+          class="w-full"
+          alt="Equilibrium Image"
+        />
+        <div
+          class="absolute w-full h-full flex top-0 left-0 items-center justify-center transition-opacity opacity-0 hover:opacity-100 bg-overlay-background"
+        >
+          <img
+            src="./images/icon-view.svg"
+            class="w-[48px] h-[48px]"
+            alt="View Icon"
+          />
+        </div>
+      </div>
+      <a
+        href="#"
+        class="text-xl mb-3 font-semibold tracking-[0.05rem] inline-block hover:text-cyan transition"
+      >
+        Equilibrium #3429
+      </a>
+      <p class="text-soft-blue leading-6 font-light mb-3">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="flex items-center justify-between pb-4">
+        <div class="flex items-center">
+          <img
+            src="./images/icon-ethereum.svg"
+            class="mr-2"
+            alt="Ethereum Icon"
+          />
+          <span class="inline uppercase text-cyan">0.041 Eth</span>
+        </div>
+        <div class="flex items-center">
+          <img src="./images/icon-clock.svg" class="mr-2" alt="Clock Icon" />
+          <span class="text-soft-blue font-light">3 days left</span>
+        </div>
+      </div>
+      <div class="bg-dark-blue w-full h-[1.3px]"></div>
+      <div class="flex items-center pt-4">
+        <img
+          src="./images/image-avatar.png"
+          class="w-10 mr-3 border-white border-[1.5px] rounded-full"
+          alt="Profile Image"
+        />
+        <p class="text-soft-blue font-light">
+          Creation of
+          <a href="#" class="text-white font-normal hover:text-cyan"
+            >Jules Wyvern</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
